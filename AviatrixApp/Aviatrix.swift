@@ -9,9 +9,16 @@
 import Foundation
 
 class Aviatrix {
+    var author:String
+    init (authorName: String){
+        author = authorName
+    }
+    
+    var running = false
     
     func start() -> Bool {
-        return true
+        running = true
+        return running
     }
     
     func refuel() {
